@@ -1,5 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
+const path = require("path");
 const generateMarkDown = require("./utils/generateMarkdown");
 
 // array of questions for user
@@ -28,27 +29,37 @@ const questions = [
     type: "input",
     message: "Please list the project installation instructions",
     name: "install",
+    default: "npm i",
   },
   {
-    type: "checkbox",
+    type: "list",
     message: "What license do you need to use?",
     name: "username",
-    choices: ["MIT", "Apache 2.0", "GPL 3.0", "BSD3"],
+    choices: ["MIT", "Apache 2.0", "GPL 3.0", "BSD 3"],
+  },
+  {
+    type: "input",
+    message: "What does the user need to know about using the repo?",
+    name: "usage",
+  },
+  {
+    type: "input",
+    message: "What does the user need to know to contribute to the repo?",
+    name: "contribute",
   },
 ];
 
 // function to write README file
 function writeToFile(fileName, data) {
-  fs.writeFile(fileName, data, (err, data) =>
-    err ? console.error(err) : console.log(data)
-  );
+  return fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
 
 // function to initialize program
 function init() {
   inquirer
     .prompt(questions)
-    .then((data) => writeToFile("README.md", generateMarkDown(data)));
+    .then((data) => writeToFile("README.md", generateMarkDown(data)))
+    .catch((error) => console.log(error));
 }
 
 // function call to initialize program
