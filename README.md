@@ -1,10 +1,12 @@
-# <span style="color:darkgreen"> **Thing**</span>
+# <span style="color:darkgreen"> **README_gen**</span>
 
-  ![License](https://img.shields.io/badge/license-BSD%203-darkgreen.svg)
+  ![License](https://img.shields.io/badge/license-Apache%202.0-darkgreen.svg)
 
   ## Application Description:
-  > *it does*
+  > *This application creates a README.md file for the user based off of the answers they give.*
+
   Below is a picture of the Application:
+  
   ![Picture Alt](url)
 
   ## Table of Contents:
@@ -21,21 +23,21 @@
   > *npm i*
 
   ## Usage:
-  > *ggeegge*
+  > *Have at it!*
 
   ## Contribution:
-  > *rrhrhhtyyt*
+  > *Please do not push to the main without a merge request!*
 
   ## License:
-  > *BSD 3*
+  > *Apache 2.0*
 
   ## Questions:
   If you have questions, please reach out using the following link
-  >[GitHub Profile](http://github.com/Huhun)
+  >[GitHub Profile](http://github.com/Seth-hulsmeyer)
 
 
-  ## Creator Info:
-  * <span style="color:green">**Name:**</span> Seth hu
-  * <span style="color:green">**GitHub Username:**</span> Huhun
-  * <span style="color:green">**Email:**</span> expressyo.self
+  ## Creator:
+  * <span style="color:green">**Name:**</span> Seth Hulsmeyer
+  * <span style="color:green">**GitHub Username:**</span> Seth-hulsmeyer
+  * <span style="color:green">**Email:**</span> seth.hulsmeyer@hotmail.com
 

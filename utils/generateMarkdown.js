@@ -1,5 +1,5 @@
 // function to generate markdown for README
-//https://guides.github.com/features/mastering-markdown/
+
 function generateMarkdown(data) {
   return `# <span style="color:darkgreen"> **${data.title}**</span>
 
